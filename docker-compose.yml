@@ -6,9 +6,6 @@ services:
     restart: always
     ports:
       - "8080:8080"
-    volumes:
-      - /home:/home 
-      - /fs:/fs
     environment:
       - AFSISIO=/home/smco502  
       - ESMFMKFILE=/opt/conda/lib/esmf.mk
