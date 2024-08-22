@@ -1,6 +1,6 @@
 FROM condaforge/mambaforge:latest
 
-EXPOSE 12800
+EXPOSE 8080
 
 COPY environment.yml /app/environment.yml
 COPY SnowExplorer-V5.ipynb /app/SnowExplorer-V5.ipynb
