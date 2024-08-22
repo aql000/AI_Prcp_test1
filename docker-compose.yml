@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   panel_azathoth2:
+    image: ubuntu@latest
     container_name: snow_explorer
     restart: always
     ports:
