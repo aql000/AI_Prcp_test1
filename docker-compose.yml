@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   panel_azathoth2:
-    image: ubuntu@latest
+    image: hedgecoin/ai_prcp_test_0001
     container_name: snow_explorer
     restart: always
     ports:
