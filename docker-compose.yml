@@ -3,10 +3,9 @@ version: '3.8'
 services:
   panel_azathoth2:
     container_name: snow_explorer
-    build: '.'
     restart: always
     ports:
-      - "12800:12800"
+      - "8080:8080"
     volumes:
       - /home:/home 
       - /fs:/fs
@@ -14,5 +13,5 @@ services:
       - AFSISIO=/home/smco502  
       - ESMFMKFILE=/opt/conda/lib/esmf.mk
     entrypoint: bash
-    command: -c 'panel serve --autoreload --port 12800 --num-threads 10 --unused-session-lifetime 60000 --allow-websocket-origin="*" /app/SnowExplorer-V5.ipynb'
+    command: -c 'panel serve --autoreload --port 8080 --num-threads 10 --unused-session-lifetime 60000 --allow-websocket-origin="*" /app/SnowExplorer-V5.ipynb'
 
