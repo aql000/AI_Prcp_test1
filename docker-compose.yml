@@ -10,6 +10,4 @@ services:
     environment:
       - AFSISIO=/home/smco502  
       - ESMFMKFILE=/opt/conda/lib/esmf.mk
-    entrypoint: bash
-    command: -c 'panel serve --autoreload --port 8080 --num-threads 10 --unused-session-lifetime 60000 --allow-websocket-origin="*" /app/SnowExplorer-V5.ipynb'
 
