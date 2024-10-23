@@ -1,4 +1,4 @@
-name: Build and Push Snow Epxlorer Image to GHCR
+name: Build and Push Snow Explorer Image to GHCR
 
 on:
   push:
