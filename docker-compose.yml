@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   panel_azathoth2:
-    image: ghcr.io/aql000/snowexplorer-fsdh:latest
+    image: ghcr.io/erikapption/snowexplorer-fsdh:latest
     container_name: snow_explorer
     restart: always
     ports:
