@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   panel_azathoth2:
     image: ghcr.io/erikapption/snowexplorer-fsdh:latest
