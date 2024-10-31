@@ -9,5 +9,5 @@ services:
       - AFSISIO=/home/smco502  
       - ESMFMKFILE=/opt/conda/lib/esmf.mk
     volumes:
-      - /data:/datahub-blob/snow-explorer
+      - /datahub-blob/snow-explorer:/data
 
