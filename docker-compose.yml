@@ -1,13 +1,14 @@
-version: '3.8'
-
 services:
   panel_azathoth2:
-    image: ghcr.io/aql000/snowexplorer-fsdh:latest
+    image: ghcr.io/erikapption/snowexplorer-fsdh:latest
     container_name: snow_explorer
     restart: always
     ports:
       - "8080:8080"
     environment:
-      - AFSISIO=/home/smco502  
-      - ESMFMKFILE=/opt/conda/lib/esmf.mk
-
+      - SCORE_FILE=/data/score_snw_station_diff_alti_200_HRDPS_CaPA01_CaPA02_period_20191001_20220629.nc
+      - SERIES_FILE=/data/series_snw_station_diff_alti_200_HRDPS_CaPA01_CaPA02_period_20191001_20220629.nc
+    volumes:
+# FSDH Config
+#      - datahub-blob:/data
+      - ./data:/data
