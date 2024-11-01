@@ -1,4 +1,4 @@
-# Docker 
+# Score and Series viewer
 
 ## Build and run locally
 

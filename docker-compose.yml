@@ -6,9 +6,9 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - SCORE_FILE=score_snw_station_diff_alti_200_HRDPS_CaPA01_CaPA02_period_20191001_20220629.nc
-      - SERIES_FILE=series_snw_station_diff_alti_200_HRDPS_CaPA01_CaPA02_period_20191001_20220629.nc
+      - SCORE_FILE=/data/score_snw_station_diff_alti_200_HRDPS_CaPA01_CaPA02_period_20191001_20220629.nc
+      - SERIES_FILE=/data/series_snw_station_diff_alti_200_HRDPS_CaPA01_CaPA02_period_20191001_20220629.nc
     volumes:
 # FSDH Config
 #      - datahub-blob:/data
-      - .:/data
+      - ./data:/data
